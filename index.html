@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/427/427533.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Snake-Game</title>
+</head>
+
+<body >
+    <div id="main" class="w-full">
+        <div id="page1" style="background-image: linear-gradient(to top ,rgba(0, 0, 255, 0),rgba(35, 33, 33, 0.799)) , url(https://i.pinimg.com/564x/02/0d/f5/020df58dc3ccf9bb6b1a0f60dd1d0044.jpg);" class="bg-auto bg-repeat h-screen w-full bg-slate-500 flex flex-col gap-6 items-center justify-center">
+            <button id="scoreReset" class="sm:px-7 sm:py-3 px-5 py-2  bg-black shadow shadow-neutral-500 text-white rounded hover:bg-blue-400 transition-all absolute right-6 top-7 duration-.3">High Score Reset</button>
+            <h1 class="text-5xl text-transparent font-bold pb-3 " style=" background: linear-gradient(to left ,rgb(255, 255, 255),#ffffff); background-clip: text; text-shadow: 4px 3px 1px rgb(29, 175, 237);">Snake-Game</h1>
+            <div id="game" class="md:h-3/5 md:w-96 w-4/5 h-1/2 bg-blue-400  rounded-lg overflow-hidden shadow-lg shadow-neutral-600">
+                <div id="score" class="h-15  w-full flex justify-between items-center p-4">
+                    <h1 id="scored" class="text-lg font-semibold text-zinc-800 flex gap-2 items-center">Score <span class="flex justify-between items-center px-2 rounded bg-zinc-900 text-white">0</span></h1>
+                    <h1 id="highScore" class="text-lg font-semibold text-zinc-800 flex gap-2 items-center">High Score <span class="flex justify-between items-center px-2 rounded bg-zinc-900 text-white">0</span></h1>
+                </div>
+                <div id="playBoard" style="grid-template: repeat(25, 1fr)/repeat(25, 1fr)"  class="bg-zinc-900 h-80 md:h-96 w-full relative grid pb-1 ">
+                </div>
+            </div>
+            <div id="control" class="h-20 w-4/5 md:hidden overflow-hidden mt rounded bg-zinc-900 flex items-center justify-between  text-white text-xl shadow-lg shadow-neutral-800">
+                <i id="Left" class="ri-arrow-left-line border-r-2 h-full flex items-center justify-center shrink-0 w-1/4 hover:bg-zinc-800"></i>
+                <i id="Up" class="ri-arrow-up-line border-r-2 h-full flex items-center justify-center shrink-0 w-1/4 hover:bg-zinc-800 "></i>
+                <i id="Down" class="ri-arrow-down-line border-r-2  h-full flex items-center justify-center shrink-0 w-1/4 hover:bg-zinc-800"></i>
+                <i id="Right" class="ri-arrow-right-line  h-full flex items-center justify-center shrink-0 w-1/4 hover:bg-zinc-800"></i>
+            </div>
+        
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
